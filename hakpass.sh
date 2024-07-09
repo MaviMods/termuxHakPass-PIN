@@ -13,14 +13,6 @@ then
 fi
 
 # Check if the file name is provided as an argument
-if [ "$1" == "--default" ]; then
- $file="pinlist.txt"
-elif ["$1" == "*.txt" ]; then
-  $file="$1"
-elif [ $# -eq 0 ]; then
-    echo "Usage: $0 <pinlist file>"
-    exit 1
-fi
 
 # Make sure the device is connected
 echo "Waiting for the device to be connected..."
