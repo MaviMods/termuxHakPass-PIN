@@ -14,7 +14,7 @@ fi
 
 # Check if the file name is provided as an argument
 if [ "$1" == "--default" ]; then
- $file="~/.hakpass/pinlist.txt"
+ $file="~./hakpass/pinlist.txt"
 elif ["$1" == "*.txt" ]; then
   $file="$1"
 elif [ $# -eq 0 ]; then
